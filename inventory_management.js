@@ -40,5 +40,5 @@ if (product.quantity <= product.lowStockLevel && product.quantity > 0) {
 else if (product.quantity <= 0) {
     product.quantity = 0; 
     console.log(`${product.name} is out of stock.`);
- {   
 }
+
