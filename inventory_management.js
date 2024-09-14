@@ -42,3 +42,16 @@ else if (product.quantity <= 0) {
     console.log(`${product.name} is out of stock.`);
 }
 } 
+
+// Task 4: Create a Function to Check Low Stock Products
+
+function checkLowStock() {
+    inventory.forEach(product => {
+
+        // Determine if the product quantity is less than the lowStockLevel
+        if (product.quantity < product.lowStockLevel) {
+            console.log(`${product.name} is low on stock.`); // Log if it's low on stock
+        }
+    });
+}
+
