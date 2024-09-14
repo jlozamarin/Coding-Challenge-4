@@ -36,7 +36,7 @@ if (product.quantity <= product.lowStockLevel && product.quantity > 0) {
     console.log(`${product.name} is low on stock. Only ${product.quantity} left.`);
 }
 
-// Confirm if product qunatity is at zero.
+// Confirm if product qunatity is at zero
 else if (product.quantity <= 0) {
     product.quantity = 0; 
     console.log(`${product.name} is out of stock.`);
