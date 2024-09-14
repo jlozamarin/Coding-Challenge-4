@@ -55,3 +55,14 @@ function checkLowStock() {
     });
 }
 
+// Task 5: Create a Function to Calculate Total Inventory Value
+
+function calculateInventoryValue() {
+
+    // Utilze reduce() to sum the total value of all products in stock
+    let totalValue = inventory.reduce((total, product) => total + product, 0);
+
+    console.log(totalValue);
+    
+    
+}
