@@ -8,7 +8,7 @@ let inventory = [
     {name: "Samsung QN90B Neo QLED 4k Smart TV", price: 1299.99, quantity: 20, lowStockLevel: 4},
     {name: "Beats Fit Pro", price: 199.99, quantity: 30, lowStockLevel: 10}
 
-;]
+];
 
 // Task 2: Create a Function to Display Product Details
 
