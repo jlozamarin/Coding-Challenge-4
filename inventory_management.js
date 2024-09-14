@@ -64,4 +64,14 @@ function calculateInventoryValue() {
     }
     console.log(`Total Inventory Value: $${calculateInventoryValue()}`);
 
-    
+// Task 6: Create a Function to Process a Sale
+
+function processSale(productName, unitsSold) {
+    let product = inventory.find(product => product.name === productName); // Find the product in the inventory by its name
+
+    if (product) {
+        updateStock(product, unitsSold); // If the product is found, call updateStock to reduce the quantity
+    } else {
+        console.log(`Error: ${productName} is not in the inventory.`);  // If the product is not found, log an error message
+    }
+}
