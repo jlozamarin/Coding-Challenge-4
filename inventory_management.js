@@ -17,7 +17,6 @@ function displayProductDetails(product) {
     if (product.quantity <= product.lowStockLevel) {
         stockStatus = "Low Stock"; // If quantity is less than or equal to the low stock level
     } else {
-    } else {
         stockStatus = "In Stock"; // If quantity is above the low stock level
     }
 
